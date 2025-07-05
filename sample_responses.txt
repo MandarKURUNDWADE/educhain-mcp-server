@@ -1,0 +1,218 @@
+(educhain-mcp-env) PS D:\educhain-mcp-server> python test_educhain.py
+Testing MCQ generation...
+✅ MCQ Generation Test Passed
+Generated 3 questions
+
+Testing lesson plan generation...
+Raw output from LLM:
+```json
+{
+  "title": "Python Programming Basics: Your Journey into Code",
+  "subject": "Computer Science / Programming",
+  "learning_objectives": [
+    "Define basic programming concepts (variables, data types, operators) and identify the syntax of Python.",
+    "Write simple Python programs using variables, data types, and operators to solve basic problems.",
+    "Design and implement a functional Python program that incorporates user input, data manipulation, and conditional logic to achieve a specific goal."
+  ],
+  "lesson_introduction": "Imagine you can control a computer with your words! Python is a powerful language that lets you do just that. From creating video games to analyzing data for scientific research, Python is used everywhere. Ever wonder how Netflix recommends shows or how self-driving cars navigate? Python is often behind the scenes, making it happen. Let's start our coding adventure!",
+  "main_topics": [
+    {
+      "title": "Variables and Data Types: The Building Blocks",
+      "subtopics": [
+        {
+          "title": "Variables: Storing Information",
+          "key_concepts": [
+            {
+              "type": "Definition",
+              "content": "A variable is a named storage location in a computer's memory that holds a value. Think of it like a labeled box where you can put things."
+            },
+            {
+              "type": "Example",
+              "content": "```python\nage = 25\nname = \"Alice\"\n```"
+            },
+            {
+              "type": "Illustration",
+              "content": "A visual representation of variables as boxes labeled with names and containing values."
+            }
+          ],
+          "discussion_questions": [
+            {
+              "question": "Why are variables important in programming?"
+            },
+            {
+              "question": "What are some real-world examples of things that can be represented as variables?"
+            }
+          ],
+          "hands_on_activities": [
+            {
+              "title": "Variable Creation",
+              "description": "Create variables to store your name, age, favorite color, and a boolean indicating if you like Python. Print these variables to the console."
+            }
+          ],
+          "reflective_questions": [
+            {
+              "question": "What happens if you try to use a variable before assigning it a value?"
+            },
+            {
+              "question": "Can variable names start with a number?"
+            }
+          ],
+          "assessment_ideas": [
+            {
+              "type": "Quiz",
+              "description": "Multiple-choice questions about variable naming rules and assignment."
+            }
+          ]
+        },
+        {
+          "title": "Data Types: Different Kinds of Information",
+          "key_concepts": [
+            {
+              "type": "Definition",
+              "content": "Data types classify the kind of value a variable can hold. Common data types in Python include integers (int), floating-point numbers (float), strings (str), and booleans (bool)."
+            },
+            {
+              "type": "Example",
+              "content": "```python\nage = 25  # int\nheight = 5.9  # float\nname = \"Alice\"  # str\nis_student = True  # bool\n```"
+            },
+            {
+              "type": "Illustration",
+              "content": "A table showcasing different data types with examples."
+            }
+          ],
+          "discussion_questions": [
+            {
+              "question": "Why are different data types necessary?"
+            },
+            {
+              "question": "What are some situations where you would use a float instead of an int?"
+            }
+          ],
+          "hands_on_activities": [
+            {
+              "title": "Data Type Identification",
+              "description": "Write code to identify the data type of different variables using the `type()` function."
+            }
+          ],
+          "reflective_questions": [
+            {
+              "question": "What is the difference between an integer and a float?"
+            },
+            {
+              "question": "How do you convert between different data types?"
+            }
+          ],
+          "assessment_ideas": [
+            {
+              "type": "Project",
+              "description": "Create a program that takes user input for name (string), age (integer), and height (float) and prints a formatted summary."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Operators: Performing Actions",
+      "subtopics": [
+        {
+          "title": "Arithmetic Operators: Math in Python",
+          "key_concepts": [
+            {
+              "type": "Definition",
+              "content": "Arithmetic operators perform mathematical calculations. These include addition (+), subtraction (-), multiplication (*), division (/), floor division (//), modulus (%), and exponentiation (**)."
+            },
+            {
+              "type": "Example",
+              "content": "```python\nresult = 5 + 3  # Addition\nremainder = 10 % 3  # Modulus\npower = 2 ** 3  # Exponentiation\n```"
+            },
+            {
+              "type": "Illustration",
+              "content": "A visual representation of each arithmetic operator with examples."
+            }
+          ],
+          "discussion_questions": [
+            {
+              "question": "What is the difference between division (/) and floor division (//)?"
+            },
+            {
+              "question": "How can the modulus operator (%) be useful?"
+            }
+          ],
+          "hands_on_activities": [
+            {
+              "title": "Calculator Program",
+              "description": "Create a simple calculator program that takes two numbers as input and performs addition, subtraction, multiplication, and division."
+            }
+          ],
+          "reflective_questions": [
+            {
+              "question": "What is the order of operations in Python?"
+            },
+            {
+              "question": "How can you use parentheses to change the order of operations?"
+            }
+          ],
+          "assessment_ideas": [
+            {
+              "type": "Written Task",
+              "description": "Write a program to calculate the area and perimeter of a rectangle given its length and width."
+            }
+          ]
+        },
+        {
+          "title": "Comparison Operators: Making Decisions",
+          "key_concepts": [
+            {
+              "type": "Definition",
+              "content": "Comparison operators compare two values and return a boolean (True or False). These include equal to (==), not equal to (!=), greater than (>), less than (<), greater than or equal to (>=), and less than or equal to (<=)."
+            },
+            {
+              "type": "Example",
+              "content": "```python\nresult = 5 > 3  # True\nresult = 10 == 10  # True\nresult = 7 != 5  # True\n```"
+            },
+            {
+              "type": "Illustration",
+              "content": "A table showcasing each comparison operator with examples."
+            }
+          ],
+          "discussion_questions": [
+            {
+              "question": "Why are comparison operators important for making decisions in programs?"
+            },
+            {
+              "question": "What is the difference between `=` and `==` in Python?"
+            }
+          ],
+          "hands_on_activities": [
+            {
+              "title": "Number Guessing Game",
+              "description": "Create a simple number guessing game where the user has to guess a number between 1 and 10. Use comparison operators to provide feedback (e.g., \"Too high!\", \"Too low!\")."
+            }
+          ],
+          "reflective_questions": [
+            {
+              "question": "What type of value do comparison operators return?"
+            },
+            {
+              "question": "How can you combine comparison operators with logical operators (and, or, not)?"
+            }
+          ],
+          "assessment_ideas": [
+            {
+              "type": "Project",
+              "description": "Develop a program that determines if a given year is a leap year using comparison and logical operators."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "learning_adaptations": "For younger students (grades 4-6), focus on visual representations of variables and data types using physical objects. Simplify the calculator program to only include addition and subtraction. For older students (grades 9-12), introduce more complex data types like lists and dictionaries, and challenge them to create more sophisticated programs.",
+  "real_world_applications": "Python is used in web development (Instagram, Spotify), data science (analyzing trends, predicting outcomes), machine learning (AI, self-driving cars), game development (many indie games), and scripting (automating tasks). Careers include: Data Scientist, Web Developer, Software Engineer, Machine Learning Engineer, Game Developer. Future learning paths include: Advanced Python, Data Structures and Algorithms, Web Frameworks (Django, Flask), Machine Learning libraries (Scikit-learn, TensorFlow).",
+  "ethical_considerations": "As students learn to code, it's important to discuss ethical considerations such as responsible data usage, avoiding bias in algorithms, and the potential impact of AI on society. For example, discussing the ethical implications of facial recognition technology or the use of algorithms in loan applications can be valuable."
+}
+```
+✅ Lesson Plan Generation Test Passed
+Generated lesson plan: Python Programming Basics: Your Journey into Code
+
+🎉 EduChain setup completed successfully!
